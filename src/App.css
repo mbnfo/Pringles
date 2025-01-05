@@ -1,0 +1,309 @@
+/*Header section*/
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Oxygen+Mono&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+  /*background-image: linear-gradient(#B40049, #FA7243);*/
+}
+
+h1, h2, h3, h4, h5, h6{
+  font: 'Coiny', system-ui;
+}
+
+#header{
+  position: absolute;
+  top: 0;
+  width: 99vw;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  color: white;
+  z-index: 0;
+  font-family: "Coiny", system-ui;
+}
+
+#header img{
+  height: 50px;
+}
+
+#header p{
+  padding: -20px;
+}
+
+#title{
+  display: flex;
+  justify-content: start;
+}
+
+#title p{
+  margin-left: 10px;
+}
+
+#navigations{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/*Hero section figure out how to make the upside down triangle*/
+#hero{
+  display: grid;
+  height: 100vh;
+  width: 99vw;
+  /*clip-path: polygon(50% 99%, 100% 80%, 100% 0, 0 0, 0 80%);*/
+  z-index: 10;
+  grid-template-columns: 2fr 3fr;
+  transition: all 0.5s ease;
+}
+
+#hero h1{
+  font-family: "Coiny", system-ui;
+  color: white;
+  font-size: 100px;
+}
+
+#canvas{
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  transition: all 0.5s ease;
+}
+
+#information{
+  margin-top: 52px;
+}
+
+#Pringles{
+  margin-top: 52px;
+  display: flex;
+}
+
+#can{
+  width: 100%;
+  height: 100%;
+}
+
+#arrows{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  gap: 53%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 4;
+}
+
+#arrow-left, #arrow-right{
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  cursor: pointer;
+}
+
+#arrow-left{
+  clip-path: polygon(100.1% 0%, 100% 100%, 50% 46.3%);
+}
+
+#arrow-right{
+  clip-path: polygon(0% 0%, 0% 100.3%, 49.2% 46.3%);
+}
+
+
+#Slogan{
+  padding: 10px;
+  font-family: "Coiny", system-ui;
+  text-align: center;
+  color: black; 
+  margin-top: 15%;
+}
+
+#Flavour{
+  color: #ECECEB;
+  text-align: right;
+  width: 100%;
+}
+
+#Flavour p{
+  margin-left: 5px;
+}
+
+#Try-now{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: "Coiny", system-ui;
+  margin-top: 5%;
+}
+
+button{
+  width: 200px;
+}
+
+/* Body section */
+
+#Body{
+  height:100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+#PringlesCan{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#circle{
+  width: 30%;
+  height: 60%;
+  background-color: #A4E9D5;
+  border: 5px solid black;
+  border-radius: 50%;
+  margin:auto;
+  z-index: 1;
+  position: absolute;
+}
+
+#descriptors h1 {
+  font-family: "Coiny", system-ui;
+  color: black;
+}
+
+#descriptor_1, #descriptor_2 {
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+
+#descriptor_2{
+  margin-top: -20%;
+}
+
+#descriptor_1_text, #descriptor_2_text{
+  padding: 10px;
+  margin-top: -50px;
+  margin-left: 80px;
+  width: 60%;
+}
+
+#descriptor_1 p, #descriptor_2 h2{
+  font-family: "Coiny", system-ui;
+  color: black;
+}
+
+#Arrow_1, #Arrow_2{
+  margin: 70px 0 0 0 ; 
+  width: 40%;
+  padding: 0;
+}
+
+#Arrow_2{
+  margin-left: -20%;
+  z-index: 10;
+  transform: rotate(10deg)
+}
+
+#chips{
+  width: 30%;
+  height: 15%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;  
+  z-index: 2;
+  gap: 10px;
+  left: 30%;
+  margin-top: -28%;
+  transform: rotate(-30deg);
+
+}
+
+.chip{
+  width: 25%;
+  width: 25%;
+  position: relative;
+  transform: rotate(90deg);
+  z-index: 2;
+  margin: -40px;
+}
+
+/* all pringles section */
+#all{
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  width: 100vw;
+  height: 100vh;
+}
+
+#try_more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Coiny", system-ui;
+}
+
+/* additional section */
+#additional{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 1fr 4fr 15fr;
+}
+
+#additional h3{
+  font-family: "Coiny", system-ui;
+  cursor: pointer;
+}
+
+#number_scroll{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#number{
+  height: 10px;
+  width: fit-content;
+  border-radius: 100%;
+  border: 1px white solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+#can_title{
+  width: 100vw;
+  height: 100%;
+
+}
+
+#can_title h1{
+  font-family: "Coiny", system-ui;
+  font-size: 60px;
+  margin: auto;
+  text-align: center;
+}
+
+#Cans{
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Cans img{
+  height: 480px;
+  width: 150px;
+  padding: 10px;
+}
