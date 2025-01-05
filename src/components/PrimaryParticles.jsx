@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const Particles = ({primaryCanvas}) => {
-  const texture = useTexture( "/assets/chip.png");
+  const texture = useTexture( "/Pringles/assets/chip.png");
 
   const ref = useRef();
   const particleCount = 100;

@@ -8,7 +8,7 @@ import * as THREE from "three";
 const Pringles_original = (props) => {
   const [canRotation, setCanRotation] = useState([0, 0, 0])
   
-  const { nodes, materials } = useGLTF('/assets/pringles_can__hd_textures__free_download.glb')
+  const { nodes, materials } = useGLTF('/Pringles/assets/pringles_can__hd_textures__free_download.glb')
   const Can = useRef()
   const Cap = useRef()
   const rotationMatrix = new THREE.Matrix4();
@@ -67,7 +67,7 @@ const Pringles_original = (props) => {
   )
 }
 
-useGLTF.preload('/assets/pringles_can__hd_textures__free_download.glb')
+useGLTF.preload('/Pringles/assets/pringles_can__hd_textures__free_download.glb')
 
 
 export default Pringles_original

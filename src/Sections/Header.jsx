@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div id = 'header'>
         <div id = 'title'>
-        <img src='/assets/Pringles_Mascot.png'/>
+        <img src='/Pringles/assets/Pringles_Mascot.png'/>
             <p>Pringles</p>
         </div>
         <div id = 'navigations'>

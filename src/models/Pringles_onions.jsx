@@ -6,7 +6,7 @@ import { useFrame } from '@react-three/fiber'
 import * as THREE from "three";
 
 const Pringles_onions = (props) => {
-  const { nodes, materials } = useGLTF('/assets/Pringles_onion.glb')
+  const { nodes, materials } = useGLTF('/Pringles/assets/Pringles_onion.glb')
   const Can = useRef()
   const Cap = useRef()
   const rotationMatrix = new THREE.Matrix4();
@@ -68,5 +68,5 @@ const Pringles_onions = (props) => {
   )
 }
 
-useGLTF.preload('/assets/Pringles_onion.glb')
+useGLTF.preload('/Pringles/assets/Pringles_onion.glb')
 export default Pringles_onions

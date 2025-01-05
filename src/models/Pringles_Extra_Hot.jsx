@@ -7,7 +7,7 @@ import * as THREE from "three";
 
 
 const Pringles_Extra_Hot = (props) => {
-  const { nodes, materials } = useGLTF('/assets/Pringles_Extra_Hot.glb')
+  const { nodes, materials } = useGLTF('/Pringles/assets/Pringles_Extra_Hot.glb')
 
   const Can = useRef()
   const Cap = useRef()
@@ -70,5 +70,5 @@ const Pringles_Extra_Hot = (props) => {
   )
 }
 
-useGLTF.preload('/assets/Pringles_Extra_Hot.glb')
+useGLTF.preload('/Pringles/assets/Pringles_Extra_Hot.glb')
 export default Pringles_Extra_Hot

@@ -74,7 +74,7 @@ const All_together = (props) => {
     }
   });
 
-  const { nodes, materials } = useGLTF('/assets/AllCans.glb');
+  const { nodes, materials } = useGLTF('/Pringles/assets/AllCans.glb');
 
   return (
     <group {...props} dispose={null}>
@@ -154,5 +154,5 @@ const All_together = (props) => {
   );
 };
 
-useGLTF.preload('/assets/AllCans.glb');
+useGLTF.preload('/Pringles/assets/AllCans.glb');
 export default All_together;
